@@ -1,0 +1,41 @@
+{
+  "name": "task-forge",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx scripts/seed.ts",
+    "test:e2e": "playwright test",
+    "format": "prettier --write app components lib scripts tests e2e *.ts *.mjs *.json README.md data/prompts.md"
+  },
+  "dependencies": {
+    "framer-motion": "^11.18.2",
+    "lucide-react": "^0.468.0",
+    "next": "14.2.35",
+    "openai": "^6.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zod": "^3.24.2",
+    "zustand": "^4.5.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.23",
+    "prettier": "^3.9.9",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.11"
+  },
+  "overrides": {
+    "postcss": "^8.5.23"
+  }
+}

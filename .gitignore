@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env
+.env.local
+*.tsbuildinfo
+data/*.tmp
+data/*.lock
+artifacts/
+
+# Local one-off implementation helper
+scripts/polish.py
